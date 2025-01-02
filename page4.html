@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion Ended</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            margin: 0;
+            text-align: center;
+        }
+
+        .message-container {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 360px;
+            display: none;
+        }
+
+        .loading {
+            font-size: 18px;
+            color: #6c757d;
+        }
+
+        .message-container h1 {
+            font-size: 24px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+
+        .message-container p {
+            font-size: 16px;
+            color: #495057;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const loadingMessage = document.querySelector('.loading');
+            const messageContainer = document.querySelector('.message-container');
+
+            // Simulate a 5-second loading time
+            setTimeout(() => {
+                loadingMessage.style.display = 'none';
+                messageContainer.style.display = 'block';
+            }, 5000);
+        };
+    </script>
+</head>
+<body>
+    <div class="loading">Loading, please wait...</div>
+
+    <div class="message-container">
+        <h1>Holiday Promotion Ended</h1>
+        <p>The holiday promotion is over. Use the original barcode!</p>
+    </div>
+</body>
+</html>

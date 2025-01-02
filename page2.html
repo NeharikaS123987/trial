@@ -1,0 +1,124 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YorkU Parking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #222;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header span {
+            font-size: 14px;
+        }
+        .content {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            margin: 0;
+            color: #333;
+        }
+        .editable {
+            color: #e6007e;
+            cursor: pointer;
+        }
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #00c2ff;
+            color: white;
+            border: none;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #00a8e6;
+        }
+        .payment-button {
+            background: none;
+            border: none;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <strong>Vanier Lot, Toronto, ON</strong>
+            <br>
+            <span>ZONE 7720</span>
+        </div>
+        <div>
+            <img src="york-logo.png" alt="YorkU Logo" height="30">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h3>Plate Number</h3>
+            <span class="editable" contenteditable="true">edit</span>
+        </div>
+
+        <div class="section">
+            <h3>Start</h3>
+            <span>Wed Jan 1, 2025 (12:00 AM EST)</span>
+        </div>
+
+        <div class="section">
+            <h3>End</h3>
+            <span>Thu Jan 2, 2025 (12:00 AM EST)</span>
+        </div>
+
+        <div class="section">
+            <h3>Parking (Tax Incl)</h3>
+            <span>$15.00</span>
+        </div>
+
+        <div class="section">
+            <h3>Service Fee</h3>
+            <span>$0.35</span>
+        </div>
+
+        <div class="total">
+            TOTAL: $15.35
+        </div>
+
+        <button class="payment-button" onclick="window.location.href='page3.html';">Select Payment Method</button>
+
+        <button class="button">Pay $15.35 &amp; Park</button>
+    </div>
+
+</body>
+</html>
